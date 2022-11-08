@@ -5,7 +5,7 @@
     <groupId>dev.prithvis</groupId>
     <artifactId>dsa</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <description>This project contains</description>
+    <description>This project contains solutions to leetcode problems</description>
     <build>
         <plugins>
             <plugin>
