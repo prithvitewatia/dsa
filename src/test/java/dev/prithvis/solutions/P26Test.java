@@ -2,7 +2,7 @@ package dev.prithvis.solutions;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+import org.junit.runners.JUnit4;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -10,12 +10,12 @@ import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
 
-@RunWith(Parameterized.class)
+@RunWith(JUnit4.class)
 public class P26Test {
     private static final Random random = new SecureRandom(); // java preferred way of generating random numbers
     private final P26 solution = new P26();
 
-    @Test(timeout = 10)
+    @Test(timeout = 100)
     public void whenInputArrayIsEmpty() {
         assertEquals(0, solution.removeDuplicates(new int[]{}));
     }
